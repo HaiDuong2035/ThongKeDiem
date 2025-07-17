@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
 
-if not os.path.exists(FILE_NAME):
+if not os.path.exists('IPP5029.csv'):
     df_init = pd.DataFrame(columns=["Tên", "Toán", "Văn", "Anh"])
-    df_init.to_csv(FILE_NAME, index=False)
+    df_init.to_csv('IPP5029.csv', index=False)
 
 df = pd.read_csv('IPP5029.csv')
 
